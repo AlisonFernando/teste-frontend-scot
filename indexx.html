@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href="css/style.css">
+  <link rel='stylesheet' href="css/components.css">
+</head>
+
+<body 
+  <main>
+    <section id="login" style="display:block">
+      <div class="form-container">
+        <div class="form-header primary">
+          <h1>Login</h1>
+        </div>
+        <form onsubmit="login(event)">
+
+          <div class="input-container">
+            <label for="email-login">Email</label>
+            <input name="email-login" placeholder="Digite seu email" required>
+          </div>
+          <div class="input-container">
+            <label for="senha-login">Senha</label>
+            <input name="senha-login" placeholder="Digite sua senha" type="password" required>
+          </div>
+          <div class="form-actions-container">
+          <button class="primary upper" type="submit" onclick="trocarTela('principal')">ENTRAR</button>
+          <button class="text" type="button" onclick="trocarTela('cadastro')">Criar uma conta</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="cadastro" style="display:none">
+      <div class="form-container">
+        <div class="form-header secondary">
+          <h1>Cadastro</h1>
+        </div>
+        <form onsubmit="cadastrar(event)">
+          <div class="input-container">
+            <label for="email-cad">Email</label>
+            <input name="email-cad" placeholder="Digite um email" required>
+          </div>
+          <div class="input-container">
+            <label for="email-cad">Senha</label>
+            <input placeholder="Digite uma senha" type="password" required>
+          </div>
+          <div class="input-container">
+            <label for="email-cad">Confirme a senha</label>
+            <input placeholder="Confirme a senha" type="password" required>
+          </div>
+        
+          <div class="form-actions-container">
+            <button class="secondary" type="submit">CADASTRAR</button>
+            <button class="text secondary" type="button" onclick="trocarTela('login')">Voltar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
