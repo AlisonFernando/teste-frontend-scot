@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
+
+:root {
+  --primary-color: hsl(215, 90%, 30%);
+  --primary-color-hover: hsl(215, 90%, 60%);
+  --secondary-color: hsl(155, 90%, 30%);
+  --secondary-color-hover: hsl(155, 90%, 40%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  font-family: "Roboto", Geneva, Tahoma, sans-serif;
+}
+
+body,
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  background-image: url(../assets/background.jpg);
+}
+
+form {
+  padding: 2rem 2rem 0.5rem 2rem;
+  background-color: white;
+  border-radius: 0 0 7px 7px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.1px);
+  -webkit-backdrop-filter: blur(1.1px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+form,
+.form-header {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-actions-container,
+.form-container {
+  flex-direction: column;
+}
+
+.form-actions-container {
+  margin-top: 2rem;
+}
+
+.form-container {
+  height: 100%;
+}
+
+.form-header {
+  color: white;
+  padding: 1rem;
+  height: 70px;
+  border-radius: 7px 7px 0 0;
+}
+
+.form-header.primary {
+  background-color: var(--primary-color);
+}
+.form-header.secondary {
+  background-color: var(--secondary-color);
+}
+
+.form-actions-container,
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  margin-bottom: 1rem;
+}

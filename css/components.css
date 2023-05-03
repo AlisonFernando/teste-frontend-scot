@@ -1,0 +1,75 @@
+input {
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: 1px solid hsl(0, 0%, 0%, 0.2);
+  border-radius: 4px;
+  height: 32px;
+  color: hsl(0, 0%, 40%);
+  padding: 1rem;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 80%);
+}
+
+button {
+  width: max-content; 
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.7rem;
+  transition: 0.3s all;
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+button.primary:hover{
+  background-color: var(--primary-color-hover);
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+button.secondary:hover{
+  background-color: var(--secondary-color-hover);
+}
+
+button.text {
+  background-color: var(--primary-color);
+  color: white;
+}
+button.text:hover{
+  background-color: var(--primary-color-hover);
+}
+button.text.secondary{
+  background-color: white;
+  color: var(--secondary-color);
+}
+button.text.secondary:hover{
+  color: var(--secondary-color-hover);
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button, input {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.input-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color:hsl(0, 0%, 50%)
+}
